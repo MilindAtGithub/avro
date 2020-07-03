@@ -1,0 +1,84 @@
+{
+  "name": "Order",
+  "type": "record",
+  "namespace": "com.milind.avro.order.request",
+  "fields": [
+    {
+      "name": "currency",
+      "type": "string"
+    },
+    {
+      "name": "totalAmount",
+      "type": "float"
+    },
+    {
+      "name": "orderId",
+      "type": "string"
+    },
+    {
+      "name": "emailAddress",
+      "type": "string"
+    },
+    {
+      "name": "cartUrl",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "lineItems",
+      "type": {
+        "type": "array",
+        "items": {
+          "name": "LineItemRecord",
+          "type": "record",
+          "fields": [
+            {
+              "name": "sku",
+              "type": "string"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            {
+              "name": "category",
+              "type": "string"
+            },
+            {
+              "name": "other",
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            {
+              "name": "unitPrice",
+              "type": "float"
+            },
+            {
+              "name": "salePrice",
+              "type": "float"
+            },
+            {
+              "name": "quantity",
+              "type": "int"
+            },
+            {
+              "name": "totalPrice",
+              "type": "float"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
