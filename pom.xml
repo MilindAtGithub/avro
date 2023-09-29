@@ -68,7 +68,7 @@
         </plugins>
     </build>
     <properties>
-        <avro.version>1.9.1</avro.version>
+        <avro.version>1.11.3</avro.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
